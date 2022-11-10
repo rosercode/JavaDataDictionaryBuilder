@@ -78,9 +78,7 @@ public class MainApp extends Application {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getClassLoader().getResource("view/Overview.fxml"));
             AnchorPane overview = (AnchorPane) loader.load();
-
             rootLayout.setCenter(overview);
-
             OverviewController controller = loader.getController();
             controller.setMainApp(this);
 
